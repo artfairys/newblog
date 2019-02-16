@@ -1,0 +1,104 @@
+.article-container {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: #ffffff;
+    .title {
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    .info {
+        display: block;
+        margin: .5rem 0 0 2rem;
+        font-size: 1rem;
+        color: #888;
+    }
+    .content {
+        line-height: 1.5;
+        margin: 2rem auto;
+        h1,h2,h3,h4,h5,h6 {
+            margin: 0 0 0 2rem;
+        }
+        h1 {
+            font-size: 1.6rem;
+        }
+        p {
+            padding: 0 2rem;
+            margin: 1rem 0 0 0;
+            img {
+                max-width: 100%;
+                min-width: 60%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        ul {
+            margin: 0 2rem 0 4rem;
+            li {
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+        ol {
+            margin: 0 2rem 0 4rem;
+            li {
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+        code {
+            background-color: orange;
+            padding: 0 .5rem;
+        }
+        figure {
+            margin: 0 2rem;
+            background-color: grey;
+            color: #ffffff;
+            overflow-x: scroll;
+        }
+        a {
+            color: #009966;
+            text-decoration: none;
+        }
+        a:hover {
+            color: orange;
+        }
+        blockquote {
+            width: auto;
+            height: auto;
+            margin: .5rem 0;
+            padding: .5rem 0;
+            background-color: #fcfcfc;
+            p {
+                margin-top: 0;
+            }
+        }
+        hr {
+            width: 95%;
+            margin: 2rem auto;
+        }
+    }
+    .tags {}
+    .paging {
+        position: relative;
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1rem;
+        }
+        #prev {
+            position: absolute;
+            left: 1rem;
+        }
+        #next {
+            position: absolute;
+            right: 1rem;
+        }
+    }
+}

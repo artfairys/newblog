@@ -1,0 +1,15 @@
+<div class="article-container">
+    <h2 class="title"><%= post.title %></h2>
+    <span class="info"><%- date(post.date, 'MMM D, YYYY') %></span>
+    <div class="toc"></div>
+    <div class="content"><%- post.content %></div>
+    <div class="tags"></div>
+    <div class="paging">
+        <% if (post.prev) { %>
+            <a id="prev" href="<%- url_for(post.prev.path) %>">⟵ 上一篇</a>
+        <% } %>
+        <% if (post.next) { %>
+            <a id="next" href="<%- url_for(post.next.path) %>">下一篇 ⟶</a>
+        <% } %>
+    </div>
+</div>

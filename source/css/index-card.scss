@@ -1,0 +1,38 @@
+.index-card {
+    width: 70%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 1rem 0 1rem 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    .thumbnail {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+    }
+    .info {
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        #title {
+            font-size: 1.5rem;
+        }
+        #excerpt {}
+        #date {
+            display: block;
+            font-size: .8rem;
+            color: #333333;
+            margin: .5rem 0;
+        }
+    }
+}
+
+/*temp*/
+.pagination {
+    text-align: center;
+    .page-number {
+        margin: 0 .5rem;
+    }
+}

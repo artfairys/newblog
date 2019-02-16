@@ -1,0 +1,13 @@
+<div class="index-card">
+  <% if (post.photos[0]) { %>
+    <div class="thumbnail">
+      <%= post.photos[0] %>
+      <img src="<%= post.photos[0] %>" alt="" />
+    </div>
+  <% } %>
+  <div class="info">
+    <a id="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    <div id="excerpt"><%- partial('excerpt', { post: post }) %></div>
+    <p id="date"><%- date(post.date, 'YYYY年M月D日') %></p>
+  </div>
+</div>
