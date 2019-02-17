@@ -23,10 +23,6 @@ copyright: All rights reserved @Kevin JOBS
 menu:
   home: ""
   about: /about
-
-auto_excerpt:
-  enable: true
-  length: 150
   
 node_sass:
   outputStyle: nested

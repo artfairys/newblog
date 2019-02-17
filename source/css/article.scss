@@ -1,6 +1,7 @@
 .article-container {
     position: relative;
     width: 70%;
+    min-width: 700px;
     height: 100%;
     margin: 0 auto;
     padding: 3rem;
@@ -14,6 +15,47 @@
         margin: .5rem 0 0 2rem;
         font-size: 1rem;
         color: #888;
+    }
+    .toc {
+        width: 90%;
+        margin: 0 5%;
+        margin-top: 2rem;
+        > ol.toc { 
+            width: 100%;
+            margin: 0;
+            padding: 2rem 0;
+            padding-left: 1rem;
+            border-radius: 1rem;
+            background-color: #dcdcdc;
+            a {
+                color: #218868;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #EE5C42;
+            }
+            li.toc-item {
+                margin-left: 1.5rem;
+                list-style: none;
+                line-height: 1.5;
+                font-size: 1rem;
+            }
+            li.toc-item.toc-level-2 {
+                margin-left: 1.5rem;
+            }
+            li.toc-item.toc-level-3 {
+                margin-left: 2rem;
+            }
+            li.toc-item.toc-level-4 {
+                margin-left: 3rem;
+            }
+            li.toc-item.toc-level-5 {
+                margin-left: 4rem;
+            }
+            li.toc-item.toc-level-6 {
+                margin-left: 5rem;
+            }
+        }
     }
     .content {
         line-height: 1.5;
@@ -87,6 +129,7 @@
     .tags {}
     .paging {
         position: relative;
+        margin-top: 1rem;
         a {
             text-decoration: none;
             color: #000;

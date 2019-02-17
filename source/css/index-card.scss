@@ -1,10 +1,10 @@
 .index-card {
     width: 70%;
+    min-width: 700px;
     height: auto;
-    margin: 2rem auto;
-    padding: 1rem 0 1rem 2rem;
+    margin: 1rem auto;
+    padding: 1rem 3rem;
     background-color: #fff;
-    border-radius: 1rem;
     .thumbnail {
         display: inline-block;
         width: 80px;
@@ -12,6 +12,8 @@
     }
     .info {
         display: inline-block;
+        width: 96%;
+        margin: 0 2%;
         a {
             text-decoration: none;
             color: #000;
@@ -19,7 +21,23 @@
         #title {
             font-size: 1.5rem;
         }
-        #excerpt {}
+        a#title:hover {
+            color: #8FBC8F;
+        }
+        #excerpt {
+            width: 98%;
+            margin: 1%;
+            padding: 1rem 0 1rem 1rem;
+            background-color: #fcfcfc;
+            font-size: 1rem;
+            color: #5c5c5c;
+            a {
+                color: #528B8B;
+            }
+            ol,ul {
+                margin-left: 2rem;
+            }
+        }
         #date {
             display: block;
             font-size: .8rem;

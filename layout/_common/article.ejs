@@ -1,8 +1,13 @@
 <div class="article-container">
     <h2 class="title"><%= post.title %></h2>
     <span class="info"><%- date(post.date, 'MMM D, YYYY') %></span>
-    <div class="toc"></div>
+    <div class="toc">
+        <% if (toc(post.content)) { %>
+            <%- toc(post.content) %>
+        <% } %>
+    </div>
     <div class="content"><%- post.content %></div>
+    <hr>
     <div class="tags"></div>
     <div class="paging">
         <% if (post.prev) { %>

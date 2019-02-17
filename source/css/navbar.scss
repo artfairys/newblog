@@ -1,23 +1,30 @@
 .navbar {
-    width: 75%;
-    height: 100%;
-    margin: 5rem auto;
-    padding: 0;
+    width: 70%;
+    min-width: 700px;
+    height: 4rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+    padding: 1rem 3rem;
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     .logo {
         display: inline-block;
-        margin-left: 2rem;
+        width: 60%;
+        min-width: 20rem;
         font-size: 3rem;
+        color: #fff;
         a {
             text-decoration: none;
-            color: #000;
+            color: #f1f1f1;
         }
     }
     ul#cate {
         display: inline-block;
-        position: absolute;
-        right: 15%;
-        margin: 1rem 0 0 0;
+        margin: 0;
         padding: 0;
+        line-height: 4rem;
         li {
             list-style: none;
             display: inline-block;
@@ -25,7 +32,7 @@
             padding: 0;
             a {
                 text-decoration: none;
-                color: #000000;
+                color: #fdfdfd;
             }
         }
         li#logo {
