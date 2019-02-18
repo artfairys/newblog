@@ -11,10 +11,10 @@
     <div class="tags"></div>
     <div class="paging">
         <% if (post.prev) { %>
-            <a id="prev" href="<%- url_for(post.prev.path) %>">⟵ 上一篇</a>
+            <a id="prev" href="<%- url_for(post.prev.path) %>">⟵ <%= __('prev_page').toUpperCase() %></a>
         <% } %>
         <% if (post.next) { %>
-            <a id="next" href="<%- url_for(post.next.path) %>">下一篇 ⟶</a>
+            <a id="next" href="<%- url_for(post.next.path) %>"><%= __('next_page').toUpperCase() %> ⟶</a>
         <% } %>
     </div>
 </div>

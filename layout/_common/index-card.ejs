@@ -7,7 +7,7 @@
   <% } %>
   <div class="info">
     <a id="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
-    <p id="date"><%- date(post.date, 'YYYY年M月D日') %></p>
+    <p id="date"><%- date(post.date, 'YYYY-MM-DD') %></p>
     <div id="excerpt"><%- partial('excerpt', { post: post }) %></div>
   </div>
 </div>
