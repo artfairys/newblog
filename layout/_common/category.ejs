@@ -12,7 +12,7 @@
             <% cate.posts.each(function(post) { %>
                 <li>
                     <a href="<%- url_for(post.path) %>"><%= post.title %></a>
-                    <span><%- date(post.date, "Y-M-d") %></span>
+                    <span><%- date(post.date, "Y-M-D") %></span>
                 </li>
             <% }) %>
             </ul>
