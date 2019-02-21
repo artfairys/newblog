@@ -14,36 +14,79 @@
         display: inline-block;
         width: 96%;
         margin: 0 2%;
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-        #title {
-            font-size: 1.5rem;
-        }
-        a#title:hover {
-            color: #8FBC8F;
-        }
-        #excerpt {
-            width: 98%;
-            margin: 1%;
-            padding: 1rem 0 1rem 1rem;
-            background-color: #fcfcfc;
-            font-size: 1rem;
-            color: #5c5c5c;
+        h2.title {
+            font-weight: normal;
             a {
-                color: #528B8B;
+                text-decoration: none;
+                color: #000;
+            }
+            a:hover {
+                color: #aaaaaa;
+            }
+        }
+        hr.divider {
+            margin: 1rem 0;
+            margin-bottom: .5rem;
+            border-top: 1px solid #ccc;
+        }
+        div.infos {
+            div.item {
+                display: inline-block;
+                font-size: .8rem;
+                color: #777777;
+                span.iconfont {}
+                span#date,#author,#cate,#tags,#divider {
+                    position: relative;
+                    bottom: .05rem;
+                }
+                span#divider {
+                    margin: 0 .2rem;
+                }
+                span#cate,#tags {
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: red;
+                    }
+                    a:visited {
+                        color: #aaa;
+                    }
+                }
+            }
+        }
+        div.excerpt {
+            width: 99%;
+            margin: 1rem auto;
+            margin-bottom: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333333;
+            a {
+                color: #444444;
+            }
+            a:hover {
+                color: #777777;
             }
             ol,ul {
                 margin-left: 2rem;
             }
+            strong {
+                font-weight: normal;
+            }
         }
-        #date {
-            display: block;
-            font-size: .8rem;
-            color: #333333;
-            margin: .5rem 0;
+        div.readmore {
+            font-size: 1rem;
+            float: right;
+            a {
+                text-decoration: none;
+            }
+            a:hover {
+                color: #cccccc;
+            }
         }
+        
     }
 }
 

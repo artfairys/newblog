@@ -1,13 +1,55 @@
 <div class="index-card">
-  <% if (post.photos[0]) { %>
-    <div class="thumbnail">
-      <%= post.photos[0] %>
-      <img src="<%= post.photos[0] %>" alt="" />
-    </div>
-  <% } %>
   <div class="info">
-    <a id="title" href="<%- url_for(post.path) %>"><%= post.title %></a>
-    <p id="date"><%- date(post.date, 'YYYY-MM-DD') %></p>
-    <div id="excerpt"><%- partial('excerpt', { post: post }) %></div>
+    <h2 class="title" >
+      <a href="<%- url_for(post.path) %>"><%= post.title %></a>
+    </h2>
+    <hr class="divider">
+    <div class="infos">
+      <div class="item">
+        <span class="iconfont icon-activity"></span>
+        <span id="date"><%- date(post.date, 'YYYY-MM-DD') %></span>
+        <span id="divider">|</span>
+      </div>
+
+      <div class="item">
+        <span class="iconfont icon-mine"></span>
+        <span id="author">
+          <% if (post.author) { %>
+            <%= post.author %>
+          <% } else { %>
+            <%= theme.author %>
+          <% } %>
+        </span>
+        <span id="divider">|</span>
+      </div>
+
+      <div class="item">
+        <span class="iconfont icon-accessory"></span>
+        <span id="cate">
+          <% post.categories.each(function(cate) { %>
+            <a href="<%- url_for(cate.path) %>"><%= cate.name %></a>
+          <% }) %>
+        </span>
+        <span id="divider">|</span>
+      </div>
+
+      <div class="item">
+        <span class="iconfont icon-label"></span>
+        <span id="tags">
+          <% post.tags.each(function(tag) { %>
+            <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+          <% }) %>
+        </span>
+      </div>
+
+    </div>
+    <div class="excerpt">
+      <%- partial('excerpt', { post: post }) %>
+    </div>
+
+    <div class="readmore">
+      <a href="<%- url_for(post.path) %>"><%- __('readmore') %> >></a>
+    </div>
+
   </div>
 </div>
