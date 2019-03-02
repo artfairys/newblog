@@ -4,7 +4,7 @@ mintin 是一个为 hexo 所做的主题。
 
 ## [Demo](https://kevinjobs.github.io/)
 
-![mintin](mintin.png)
+![mintin](mintin-preview.png)
 
 ## 安装
 
