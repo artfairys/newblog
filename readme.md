@@ -19,13 +19,12 @@ $ git clone -b master https://github.com/kevinjobs/hexo-theme-mintin.git themes/
 #### 开发版
 
 ```bash
-$ git clone -b develop https://github.com/lewis-geek/hexo-theme-mintin.git themes/mintin
+$ git clone -b develop https://github.com/kevinjobs/hexo-theme-mintin.git themes/mintin
 ```
 
 ### 依赖
 
 ```bash
-$ npm install --save hexo-renderer-sass
 $ npm install --save hexo-auto-category
 $ npm install --save hexo-excerpt
 $ npm install --save hexo-tag-cloud
@@ -35,7 +34,7 @@ $ npm install --save hexo-tag-cloud
 
 hexo 有两个配置文件，一个在 hexo 项目的根目录，另一个在主题文件夹的根目录，文件名都是均为 `_config.yml` 。
 
-### 项目配置
+### 项目配置(位于项目根目录)
 
 ```yaml
 theme: mintin
@@ -71,7 +70,7 @@ tag_cloud:
   outlineColour: \#e2e1d1
 ```
 
-### 主题配置
+### 主题配置（位于主题根目录）
 
 ```yaml
 # 自定导航栏 logo
@@ -92,12 +91,6 @@ social:
 mail: kevinjobs@qq.com
 copyright: All rights reserved @Kevin JOBS
 
-# sass 配置
-# sass plugin
-node_sass:
-  outputStyle: nested
-  precision: 5
-  sourceComments: false
 ```
 
 ### About 页面（关于页面）
