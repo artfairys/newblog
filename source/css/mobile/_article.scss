@@ -1,0 +1,53 @@
+$toColor: rgb(144,180,75);
+$link: rgb(46,169,223);
+$bqColor: rgb(231,148,96);
+
+.article-container {
+	width: 98%;
+	margin: .5rem auto;
+	padding: .5rem;
+	background-color: #fff;
+	border-radius: .5rem;
+	.title {
+		text-align: center;
+		padding: .5rem;
+	}
+	.info {
+		display: block;
+		text-align: center;
+		padding: .5rem;
+	}
+	.toc {
+		width: 100%;
+		padding: 1rem;
+		background-color: $toColor;
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+		ol {
+			list-style: none;
+		}
+	}
+	.content {
+		margin: 1rem auto;
+		padding: 0 .5rem;
+		line-height: 1.5;
+		blockquote {
+			background-color: #ccc;
+			padding: .2rem .5rem;
+		}
+		a {
+			text-decoration: none;
+			color: $link;
+		}
+		img {
+			display: block;
+			width: 95%;
+			margin: 1rem auto;
+		}
+		figure {
+			overflow: scroll;
+		}
+	}
+}

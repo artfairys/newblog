@@ -1,0 +1,37 @@
+$avColor: rgb(199,62,58);
+/* index-card */
+.index-card {
+  width: 98%;
+  margin: .5rem auto 0 auto;
+  background-color: #fff;
+  border-radius: .5rem;
+  .info {
+    text-align: center;
+    .title {
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+    .divider {
+      width: 90%;
+      margin: .5rem auto;
+    }
+    .infos {
+      margin: .5rem auto;
+      .item {
+        display: inline-block;
+        font-size: .5rem;
+      }
+    }
+    .readmore {
+      font-size: 1.2rem;
+      padding: .5rem;
+    }
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  a:visited {
+    color: $avColor;
+  }
+}
