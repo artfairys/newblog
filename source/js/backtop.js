@@ -6,8 +6,10 @@ window.onload = function() {
         var nowHeight = document.body.scrollTop || document.documentElement.scrollTop;
         if (nowHeight > height) {
             visi.style.visibility = 'visible';
+            visi.style.display = 'inline-block';
         } else {
             visi.style.visibility = 'hidden';
+            visi.style.display = 'none';
         }
     }
     var timer  = null;

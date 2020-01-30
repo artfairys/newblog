@@ -1,7 +1,8 @@
-<div class="cate">
-    <div id='title'>
+<div class="cate_page">
+    <div class='title'>
         <h1><%= __('cate_page').toUpperCase() %></h2>
     </div>
+    <div class="cate-list-container">
     <% site.categories.each(function(cate) { %>
         <div class="cate-list">
             <span id="img"><%- image_tag('/img/tag.png') %></span>
@@ -19,4 +20,5 @@
             <hr>
         </div>
     <% }) %>
+    </div>
 </div>

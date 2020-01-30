@@ -1,12 +1,14 @@
-<% if (site.tags.length) { %>
-    <script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
-    <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
-    <div class="widget-wrap tags-cloud">
-        <h3 class="widget-title tags-cloud-title"><%= __('tags_cloud').toUpperCase() %></h3>
-        <div id="myCanvasContainer" class="widget tagcloud tags-cloud-canvas">
-            <canvas width="350" height="350" id="resCanvas" style="width=100%">
-                <%- tagcloud() %>
-            </canvas>
+<div class="tags">
+    <% if (site.tags.length) { %>
+        <h3 class="title"><%= __('tags_cloud').toUpperCase() %></h3>
+        <script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+        <script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+        <div class="widget-wrap tags-cloud">
+            <div id="myCanvasContainer" class="widget tagcloud tags-cloud-canvas">
+                <canvas width="350" height="350" id="resCanvas" style="width=100%">
+                    <%- tagcloud() %>
+                </canvas>
+            </div>
         </div>
-    </div>
-<% } %>
+    <% } %>
+</div>

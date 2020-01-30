@@ -5,9 +5,14 @@
 </div>
 <div class="cate">
     <ul>
-        <li><a href="/">HOME</a></li>
-        <li><a href='/categories'><%= __('navbar.cate').toUpperCase() %></a></li>
-        <li><a href="/tags"><%= __('navbar.tags').toUpperCase() %></a></li>
-        <li><a href="/about"><%= __('navbar.about').toUpperCase() %></a></li>
+        <span id='trans'>
+            <li><a href="/">HOME</a></li>
+            <li><a href='/categories'><%= __('navbar.cate').toUpperCase() %></a></li>
+            <li><a href="/tags"><%= __('navbar.tags').toUpperCase() %></a></li>
+            <li><a href="/about"><%= __('navbar.about').toUpperCase() %></a></li>
+        </span>
+        <li>
+        	<%- partial('_plugins/backtop') %>
+        </li>
     </ul>
 </div>
