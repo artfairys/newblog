@@ -7,7 +7,7 @@ $bqColor: rgb(231,148,96);
 	margin: .5rem auto;
 	padding: 2rem;
 	background-color: #fff;
-	border-radius: .5rem;
+	border-radius: 0;
 	font-size: 1rem;
 	.title {
 		text-align: center;
@@ -89,26 +89,36 @@ $bqColor: rgb(231,148,96);
 			visibility: hidden;
 		}
 	}
-	.paging {
-		display: block;
-		margin: 1rem auto;
-		a {
-			display: inline-block;
-			text-decoration: none;
-			width: 49%;
-		}
-		a#next {
-			width: 49%;
-			text-align: right;
-		}
+}
+.paging {
+	display: block;
+	margin: 。5rem auto;
+	a {
+		display: inline-block;
+		text-decoration: none;
+		width: 50%;
+		height: 3rem;
+		line-height: 3rem;
+		text-align: center;
+		background-color: #fff;
+	}
+	a:visited {
+		color: #000;
+	}
+	a:hover {
+		background-color: $toColor;
+		color: #fff;
+	}
+	a#next {
+		width: 49%;
 	}
 }
 .footer {
 	width: 100%;
-	margin: 0 auto;
+	margin: .5rem auto;
 	margin-bottom: 5%;
 	background-color: #fff;
-	border-radius: .5rem;
+	border-radius: 0;
 	text-align: center;
 	height: 4rem;
 	line-height: 4rem;
