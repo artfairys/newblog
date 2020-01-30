@@ -1,8 +1,13 @@
-<% if (page.prev || page.next) { %>
-  <nav class="pagination">
-    <%- paginator({
-      prev_text: '<span class="page-prev"></span>',
-      next_text: '<span class="page-next"></span>',
-    }) %>
-  </nav>
-<% } %>
+<nav class="pagination">
+	<div class="pages">
+		<% if (page.prev || page.next) { %>
+	    <%- paginator({
+	      prev_text: '<',
+	      next_text: '>',
+	      escape: false,
+	      prev_next: true,
+	      show_all: false,
+	    }) %>
+	  <% } %>
+	</div>
+</nav>

@@ -1,0 +1,50 @@
+/* navbar */
+.navbar {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+  }
+  .logo {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 98%;
+    height: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 3rem;
+    a {
+      color: #fff;
+    }
+    border-radius: .5rem .5rem 0 0;
+  }
+}
+.cate {
+  display: block;
+  position: sticky !important;
+  position: -webkit-sticky;
+  top: 0;
+  left: 1%;
+  z-index: 10;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 98%;
+  height: 2rem;
+  margin: .5rem auto;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 0;
+  ul {
+    li {
+      display: inline-block;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}

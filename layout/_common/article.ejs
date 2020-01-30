@@ -1,15 +1,20 @@
 <div class="article-container">
     <h2 class="title"><%= post.title %></h2>
-    <span class="info"><%- date(post.date, 'MMM D, YYYY') %></span>
-    <div class="toc">
-        <% if (toc(post.content)) { %>
+    <span class="info"><%- date(post.date, 'YYYY年M月D日') %></span>
+    
+    <% if (toc(post.content)) { %>
+        <div class="toc">
             <%- toc(post.content) %>
-        <% } %>
-    </div>
+        </div>
+    <% } %>
+
     <div class="content"><%- post.content %></div>
     <hr>
     <div class="tags"></div>
     <div class="paging">
+        <% if (!post.prev) { %>
+            <a id="prev" href=""></a>
+        <% } %>
         <% if (post.prev) { %>
             <a id="prev" href="<%- url_for(post.prev.path) %>">⟵ <%= __('prev_page').toUpperCase() %></a>
         <% } %>

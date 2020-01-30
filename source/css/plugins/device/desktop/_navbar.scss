@@ -1,0 +1,50 @@
+/* navbar */
+.navbar {
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+  }
+  .logo {
+    background: #00467F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem;
+    border-radius: 0 0 .5rem .5rem;
+    p {
+      a {
+        color: #fcfcfc;
+      }
+    }
+  }
+}
+.cate {
+  position: sticky;
+  top: 0;
+  background: #00467F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 4rem;
+  margin: .5rem auto 0 auto;
+  text-align: center;
+  line-height: 4rem;
+  border-radius: .5rem;
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 1rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #fcfcfc;
+  }
+}
