@@ -1,14 +1,15 @@
 .cate_page {
-  margin: .5rem 0;
+  margin: .2rem 0;
   padding: 1rem 0;
   background-color: #fff;
+  font-size: 1rem;
   .title {
     font-size: 1rem;
     width: 8rem;
     margin: 1rem auto;
   }
   .cate-list-container {
-    width: 60%;
+    width: 80%;
     margin: 3rem auto;
     a {
       text-decoration: none;
@@ -43,6 +44,7 @@
       }
       hr {
         margin: 1rem 0;
+        height: 1px;
       }
     }
   }

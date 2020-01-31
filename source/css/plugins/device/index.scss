@@ -5,8 +5,8 @@
 	@import 'mobile/article';
 	@import 'mobile/pagination';
 	@import 'mobile/rights';
-	@import 'desktop/cate_page';
-	@import 'desktop/tags_page';
+	@import 'mobile/cate_page';
+	@import 'mobile/tags_page';
 }
 @media screen and (min-width: 801px) {
 	@import 'desktop/base';

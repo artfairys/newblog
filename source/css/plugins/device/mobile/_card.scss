@@ -4,30 +4,33 @@ $avColor: rgb(199,62,58);
   margin-top: 0;
 }
 .index-card {
-  width: 98%;
-  margin: .5rem auto 0 auto;
+  width: 100%;
+  margin: .2rem auto;
   background-color: #fff;
-  border-radius: .5rem;
+  border-radius: 0;
   .info {
     text-align: center;
     .title {
-      padding: 1rem;
-      font-size: 1.5rem;
+      padding: 1rem 1rem 0 1rem;
+      font-size: 1.3rem;
     }
     .divider {
+      visibility: hidden;
+      display: none;
       width: 90%;
       margin: .5rem auto;
     }
     .infos {
       margin: .5rem auto;
+      font-size: .7rem;
       .item {
         display: inline-block;
-        font-size: .5rem;
       }
     }
     .readmore {
-      font-size: 1.2rem;
-      padding: .5rem;
+      visibility: hidden;
+      font-size: 1rem;
+      padding: .2rem;
     }
   }
   a {
