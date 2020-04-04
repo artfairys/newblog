@@ -7,7 +7,8 @@ $bqColor: rgb(231,148,96);
 	margin: .5rem auto;
 	padding: 2rem;
 	background-color: #fff;
-	border-radius: 0;
+	border: 1px solid rgba($color: #000000, $alpha: 0.1);
+	border-radius: .5rem;
 	font-size: 1rem;
 	.title {
 		text-align: center;
@@ -101,6 +102,9 @@ $bqColor: rgb(231,148,96);
 		line-height: 3rem;
 		text-align: center;
 		background-color: #fff;
+		color: #000;
+		border: 1px solid rgba(0,0,0,0.1);
+		border-radius: .5rem;
 	}
 	a:visited {
 		color: #000;
@@ -110,7 +114,7 @@ $bqColor: rgb(231,148,96);
 		color: #fff;
 	}
 	a#next {
-		width: 49%;
+		width: 49.44%;
 	}
 }
 .footer {
@@ -122,6 +126,8 @@ $bqColor: rgb(231,148,96);
 	text-align: center;
 	height: 4rem;
 	line-height: 4rem;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: .5rem;
 	p {
 		a {
 			text-decoration: none;

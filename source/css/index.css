@@ -342,101 +342,89 @@
   body {
     width: 100%;
     height: 100%;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
     font-size: 20px;
-    font-family: "STHeiti Light", "STHeiti", "Microsoft YaHei", "Pingfang SC" "STSong", "SimSun", "FangSong", "STFangSong";
+    font-family: -apple-system, SF UI Display, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
   }
   body .all-container {
     display: block;
     margin: 1rem auto;
     padding: 0;
-    width: 60%;
+    width: 70%;
     min-width: 880px;
     height: 100%;
   }
+  body .all-container .container {
+    margin-top: 2rem;
+  }
 
   /* navbar */
-  .navbar a {
-    color: black;
-    text-decoration: none;
-  }
-  .navbar a:visited {
-    color: black;
-  }
-  .navbar .logo {
-    background: #00467F;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A5CC82, #00467F);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A5CC82, #00467F);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
-    height: 4rem;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 4rem;
-    font-size: 2rem;
-    border-radius: 0;
-  }
-  .navbar .logo p a {
-    color: #fcfcfc;
-  }
-
-  .cate {
+  .navbar-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
-    background: #00467F;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A5CC82, #00467F);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A5CC82, #00467F);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
-    height: 2.8rem;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 2.9rem;
-    border-radius: 0;
+    z-index: 10;
+    background-color: #fff;
   }
-  .cate ul li {
+  .navbar-container .navbar {
+    margin: 0 13%;
+    padding: 1rem;
+  }
+  .navbar-container .navbar ul li {
     display: inline-block;
-    margin: 0;
-    padding: 0 1rem;
+    margin: 0 1rem;
   }
-  .cate ul li span#backtop {
-    cursor: pointer;
-    color: #fcfcfc;
-  }
-  .cate ul li span#backtop:hover {
-    color: #000;
-  }
-  .cate ul li:hover {
-    background: #f1f1f1;
-  }
-  .cate ul li:hover a {
-    color: #000;
-  }
-  .cate a {
+  .navbar-container .navbar ul li a {
     text-decoration: none;
-    color: #fcfcfc;
+    color: #000;
+  }
+  .navbar-container .navbar ul li a:visited {
+    color: #000;
+  }
+  .navbar-container .navbar ul li a:hover {
+    color: #000;
   }
 
   /* index-card */
+  .card-container {
+    width: 70%;
+    float: left;
+  }
+
   .index-card {
     width: 100%;
     margin: 0.5rem auto 0 auto;
-    background-color: #fff;
+    background-color: none;
     border-radius: 0;
   }
   .index-card .info {
-    text-align: center;
+    text-align: left;
+    /*
+    .readmore {
+      font-size: 1.2rem;
+      padding: .5rem;
+    }
+    */
   }
   .index-card .info .title {
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+  .index-card .info .title a {
+    color: #333;
+  }
+  .index-card .info .title a:hover {
+    color: #567;
   }
   .index-card .info .divider {
-    width: 90%;
+    width: 100%;
+    height: 1px;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin: 0.5rem auto;
   }
   .index-card .info .infos {
@@ -444,11 +432,16 @@
   }
   .index-card .info .infos .item {
     display: inline-block;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
-  .index-card .info .readmore {
-    font-size: 1.2rem;
-    padding: 0.5rem;
+  .index-card .excerpt {
+    font-size: 1rem;
+    color: #777;
+    word-wrap: break-word;
+    padding: 0.5rem 0;
+  }
+  .index-card .excerpt a {
+    color: #777;
   }
   .index-card a {
     color: #000;
@@ -458,12 +451,53 @@
     color: #000;
   }
 
+  /* right widgets */
+  .widgets {
+    float: left;
+    position: sticky;
+    top: 3rem;
+    width: 26%;
+    height: auto;
+    border: 0 solid #000;
+    border-radius: 0.6rem;
+    margin-left: 2rem;
+    padding: 1rem 2rem;
+    background-color: #f1f1f1;
+  }
+  .widgets .self-info h2 {
+    text-align: left;
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+  .widgets .self-info .infos img {
+    display: block;
+    float: left;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 52px;
+  }
+  .widgets .self-info .infos span {
+    float: left;
+    font-size: 1rem;
+    margin: 0.5rem 0 0 0.5rem;
+  }
+  .widgets .self-info .methods {
+    clear: both;
+    padding: 1rem 0 0 2rem;
+  }
+  .widgets .self-info .methods a {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+
   .article-container {
     width: 100%;
     margin: 0.5rem auto;
     padding: 2rem;
     background-color: #fff;
-    border-radius: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
     font-size: 1rem;
   }
   .article-container .title {
@@ -504,6 +538,7 @@
   }
   .article-container .content hr {
     margin: 1rem auto;
+    border-top: 1px solid rgba(0,0,0,.1);
   }
   .article-container .content p {
     text-indent: 2rem;
@@ -547,6 +582,11 @@
     visibility: hidden;
   }
 
+  .article-container hr {
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+
   .paging {
     display: block;
     margin: 。5rem auto;
@@ -559,6 +599,9 @@
     line-height: 3rem;
     text-align: center;
     background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
   }
   .paging a:visited {
     color: #000;
@@ -568,7 +611,7 @@
     color: #fff;
   }
   .paging a#next {
-    width: 49%;
+    width: 49.44%;
   }
 
   .footer {
@@ -580,6 +623,8 @@
     text-align: center;
     height: 4rem;
     line-height: 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
   }
   .footer p a {
     text-decoration: none;
@@ -618,6 +663,12 @@
     visibility: hidden;
   }
 
+  .rights {
+    display: none;
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+  }
   .rights p {
     text-align: center;
     font-size: 0.8rem;
