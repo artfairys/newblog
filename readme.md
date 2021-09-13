@@ -2,7 +2,9 @@
 
 mintin 是一个为 hexo 所做的主题。
 
-## [Demo](https://kevinjobs.github.io/)
+更新日期: 2021-09-13
+
+## [Demo](https://blog.kevinjobs.com/mintin)
 
 ![mintin](mintin-preview.png)
 
@@ -12,14 +14,10 @@ mintin 是一个为 hexo 所做的主题。
 
 #### 最新 release 版
 
+进入你的项目文件夹
+
 ```bash
 $ git clone -b master https://github.com/kevinjobs/hexo-theme-mintin.git themes/mintin
-```
-
-#### 开发版
-
-```bash
-$ git clone -b develop https://github.com/kevinjobs/hexo-theme-mintin.git themes/mintin
 ```
 
 ### 依赖
